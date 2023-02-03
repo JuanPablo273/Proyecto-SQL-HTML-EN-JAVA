@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script type="text/javascript">
+
+            function validarDatos(){
+                    //hay que validar que nada quede en blanco
+                    alert("Hay que validar los datos...");
+
+                    return true;
+            }
+
+        </script>
+        
+    </head>
+    <body>
+        <form method="post" action="ServletPaciente">
+            <h1>Datos del Paciente</h1>
+            <table border="1">
+                <tr>
+                    <td>Num_Asegurado</td>
+                    <td>
+                        <input type="number" id="txtNum_asegurado" name="num_asegurado"
+                               maxlength="50" style="width:400px;" placeholder="Ingrese su Num_asegurado"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nombre</td>
+                    <td>
+                        <input type="text" id="txtNombre" name="nombre" 
+                               placeholder="Ingrese su nombre" style="width:400px;"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Direccion</td>
+                    <td>
+                        <input type="text" id="txtDireccion" name="direccion" 
+                               placeholder="Ingrese su direccion" style="width:400px;"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Edad</td>
+                    <td>
+                        <input type="number" id="txtEdad" name="edad" 
+                               placeholder="Ingrese su edad" style="width:400px;"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Fecha_Nacimiento</td>
+                    <td>
+                        <input type="Date" id="txtFecha_nacimiento" name="fehca_nacimiento"    
+                               placeholder="Ingrese su fecha de nacimiento" style="width:400px;"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <input type="text" id="txtEmail" name="email" 
+                               placeholder="Ingrese su Email" style="width:400px;"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Telefono/td>
+                    <td>
+                        <input type="number" id="txtTelefono" name="telefono" 
+                               placeholder="Ingrese su Telefono" style="width:400px;"/>
+                    </td>
+                </tr>
+                 <tr>
+                    <td>Profesion/td>
+                    <td>
+                        <input type="text" id="txtProfesion" name="profesion" 
+                               placeholder="Ingrese su Profesion" style="width:400px;"/>
+                    </td>
+                </tr>
+                
+            </table>
+            <br/><br/>
+
+            <input type="reset" value="Limpiar"/>
+            <input type="submit" value="Enviar datos" onclick="return validarDatos();"/>
+
+
+        </form>
+    </body>
+</html>
